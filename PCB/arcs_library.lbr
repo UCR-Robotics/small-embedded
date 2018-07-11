@@ -65,6 +65,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
@@ -92,7 +94,9 @@
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
 <layer number="114" name="DXF_IMPORT" color="13" fill="1" visible="no" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -101,6 +105,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
@@ -136,11 +141,21 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <library>
 <packages>
@@ -8612,69 +8627,69 @@ SDO</text>
 <wire x1="0" y1="0" x2="0" y2="10.16" width="0.254" layer="94"/>
 </symbol>
 <symbol name="POLOLU_STEP_DOWN_5V_9A">
-<pin name="EN" x="-7.62" y="7.62" visible="pin" length="short"/>
+<pin name="EN" x="-7.62" y="12.7" visible="pin" length="short"/>
 <pin name="VIN@1" x="-7.62" y="5.08" visible="pin" length="short"/>
 <pin name="VIN@2" x="-7.62" y="2.54" visible="pin" length="short"/>
 <pin name="GND@1" x="-7.62" y="0" visible="pin" length="short"/>
 <pin name="GND@2" x="-7.62" y="-2.54" visible="pin" length="short"/>
-<wire x1="-5.08" y1="-17.78" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
-<wire x1="7.62" y1="15.24" x2="7.62" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-17.78" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="20.32" x2="7.62" y2="20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="20.32" x2="7.62" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-17.78" x2="-5.08" y2="-17.78" width="0.254" layer="94"/>
-<pin name="VOUT@1" x="-7.62" y="-10.16" visible="pin" length="short"/>
+<pin name="VOUT@1" x="-7.62" y="10.16" visible="pin" length="short"/>
 <pin name="VOUT@2" x="-7.62" y="-12.7" visible="pin" length="short"/>
 <pin name="VOUT@3" x="-7.62" y="-15.24" visible="pin" length="short"/>
-<pin name="FB" x="-7.62" y="10.16" visible="pin" length="short"/>
-<pin name="PG" x="-7.62" y="12.7" visible="pin" length="short"/>
-<pin name="GND@3" x="-7.62" y="-5.08" visible="pin" length="short"/>
-<pin name="GND@4" x="-7.62" y="-7.62" visible="pin" length="short"/>
+<pin name="FB" x="-7.62" y="15.24" visible="pin" length="short"/>
+<pin name="PG" x="-7.62" y="17.78" visible="pin" length="short"/>
+<pin name="GND@3" x="-7.62" y="-7.62" visible="pin" length="short"/>
+<pin name="GND@4" x="-7.62" y="-10.16" visible="pin" length="short"/>
 <text x="-5.08" y="-20.32" size="1.27" layer="125">&gt;NAME</text>
-<text x="10.16" y="-17.78" size="1.27" layer="127" rot="R90" align="top-left">&gt;VALUE</text>
+<text x="10.16" y="-17.78" size="2.54" layer="127" rot="R90" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="POLOLU_MC33926_DUAL_MOTOR_DRIVER">
-<pin name="M2FB" x="50.8" y="35.56" visible="pin" length="middle" rot="R180"/>
-<pin name="M2SF" x="50.8" y="30.48" visible="pin" length="middle" rot="R180"/>
-<pin name="M2D1" x="50.8" y="25.4" visible="pin" length="middle" rot="R180"/>
-<pin name="M2IN1" x="50.8" y="15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="M2IN2" x="50.8" y="10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="M2D2" x="50.8" y="20.32" visible="pin" length="middle" rot="R180"/>
-<pin name="M1FB" x="-10.16" y="35.56" visible="pin" length="middle"/>
-<pin name="M1SF" x="-10.16" y="30.48" visible="pin" length="middle"/>
-<pin name="M1D2" x="-10.16" y="20.32" visible="pin" length="middle"/>
-<pin name="M1IN1" x="-10.16" y="15.24" visible="pin" length="middle"/>
-<pin name="M1IN2" x="-10.16" y="10.16" visible="pin" length="middle"/>
-<pin name="M1D1" x="-10.16" y="25.4" visible="pin" length="middle"/>
+<pin name="M2FB" x="40.64" y="25.4" visible="pin" length="middle" rot="R180"/>
+<pin name="M2SF" x="40.64" y="20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="M2D1" x="40.64" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="M2IN1" x="40.64" y="35.56" visible="pin" length="middle" rot="R180"/>
+<pin name="M2IN2" x="40.64" y="30.48" visible="pin" length="middle" rot="R180"/>
+<pin name="M2D2" x="40.64" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="M1FB" x="-10.16" y="25.4" visible="pin" length="middle"/>
+<pin name="M1SF" x="-10.16" y="20.32" visible="pin" length="middle"/>
+<pin name="M1D2" x="-10.16" y="10.16" visible="pin" length="middle"/>
+<pin name="M1IN1" x="-10.16" y="35.56" visible="pin" length="middle"/>
+<pin name="M1IN2" x="-10.16" y="30.48" visible="pin" length="middle"/>
+<pin name="M1D1" x="-10.16" y="15.24" visible="pin" length="middle"/>
 <pin name="INV" x="7.62" y="45.72" visible="pin" length="middle" rot="R270"/>
 <pin name="SLEW" x="12.7" y="45.72" visible="pin" length="middle" rot="R270"/>
 <pin name="EN" x="17.78" y="45.72" visible="pin" length="middle" rot="R270"/>
-<pin name="VDD" x="22.86" y="45.72" visible="pin" length="middle" rot="R270"/>
-<pin name="GND" x="27.94" y="45.72" visible="pin" length="middle" rot="R270"/>
-<pin name="VIN" x="33.02" y="45.72" visible="pin" length="middle" rot="R270"/>
-<wire x1="-5.08" y1="40.64" x2="45.72" y2="40.64" width="0.254" layer="94"/>
-<wire x1="45.72" y1="40.64" x2="45.72" y2="7.62" width="0.254" layer="94"/>
-<wire x1="45.72" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="VDD" x="17.78" y="2.54" visible="pin" length="middle" rot="R90"/>
+<pin name="GND" x="12.7" y="2.54" visible="pin" length="middle" rot="R90"/>
+<pin name="VIN" x="7.62" y="2.54" visible="pin" length="middle" rot="R90"/>
+<wire x1="-5.08" y1="40.64" x2="35.56" y2="40.64" width="0.254" layer="94"/>
+<wire x1="35.56" y1="40.64" x2="35.56" y2="7.62" width="0.254" layer="94"/>
+<wire x1="35.56" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="40.64" width="0.254" layer="94"/>
-<text x="35.56" y="40.64" size="2.54" layer="125" font="vector">&gt;NAME</text>
-<text x="-5.08" y="2.54" size="2.54" layer="127" font="vector">&gt;VALUE</text>
+<text x="25.4" y="40.64" size="1.27" layer="125" font="vector">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.27" layer="127" font="vector">&gt;VALUE</text>
 </symbol>
 <symbol name="POLOLU_D24V150F6_STEPDOWN_15A_6V">
-<pin name="VIN@1" x="-10.16" y="25.4" visible="pin" length="middle" rot="R270"/>
-<pin name="VIN@2" x="-5.08" y="25.4" visible="pin" length="middle" rot="R270"/>
-<pin name="GND@1" x="0" y="25.4" visible="pin" length="middle" rot="R270"/>
-<pin name="GND@2" x="5.08" y="25.4" visible="pin" length="middle" rot="R270"/>
-<pin name="VOUT@1" x="45.72" y="25.4" visible="pin" length="middle" rot="R270"/>
-<pin name="VOUT@2" x="50.8" y="25.4" visible="pin" length="middle" rot="R270"/>
-<pin name="GND@3" x="35.56" y="25.4" visible="pin" length="middle" rot="R270"/>
-<pin name="GND@4" x="40.64" y="25.4" visible="pin" length="middle" rot="R270"/>
-<pin name="PG" x="10.16" y="25.4" visible="pin" length="middle" rot="R270"/>
-<pin name="MOD" x="15.24" y="25.4" visible="pin" length="middle" rot="R270"/>
-<pin name="GND@5" x="20.32" y="25.4" visible="pin" length="middle" rot="R270"/>
-<pin name="GND@6" x="25.4" y="25.4" visible="pin" length="middle" rot="R270"/>
-<pin name="EN" x="30.48" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="VIN@1" x="-12.7" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="VIN@2" x="-10.16" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="GND@1" x="-5.08" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="GND@2" x="-2.54" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="VOUT@1" x="22.86" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="VOUT@2" x="25.4" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="GND@3" x="17.78" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="GND@4" x="20.32" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="PG" x="2.54" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="MOD" x="5.08" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="GND@5" x="7.62" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="GND@6" x="10.16" y="25.4" visible="pin" length="middle" rot="R270"/>
+<pin name="EN" x="12.7" y="25.4" visible="pin" length="middle" rot="R270"/>
 <wire x1="-15.24" y1="20.32" x2="-15.24" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="7.62" x2="55.88" y2="7.62" width="0.254" layer="94"/>
-<wire x1="55.88" y1="7.62" x2="55.88" y2="20.32" width="0.254" layer="94"/>
-<wire x1="55.88" y1="20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="7.62" x2="30.48" y2="7.62" width="0.254" layer="94"/>
+<wire x1="30.48" y1="7.62" x2="30.48" y2="20.32" width="0.254" layer="94"/>
+<wire x1="30.48" y1="20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
 <text x="-12.7" y="-2.54" size="2.54" layer="125" font="vector">&gt;NAME</text>
 <text x="-12.7" y="2.54" size="2.54" layer="127" font="vector">&gt;VALUE</text>
 </symbol>
@@ -8755,6 +8770,13 @@ SDO</text>
 <wire x1="-15.24" y1="-2.54" x2="-15.24" y2="17.78" width="0.254" layer="94"/>
 <text x="5.08" y="20.32" size="1.27" layer="125">&gt;NAME</text>
 <text x="5.08" y="-5.08" size="1.27" layer="127">&gt;VALUE</text>
+</symbol>
+<symbol name="+6V">
+<wire x1="-1.524" y1="1.016" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.524" y1="1.016" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-1.016" size="1.778" layer="127" rot="R90">&gt;VALUE</text>
+<pin name="P$1" x="0" y="0" visible="off" length="point" direction="sup" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9323,6 +9345,18 @@ SDO</text>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 <connect gate="G$1" pin="VDDIO" pad="VDDIO"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+6V">
+<gates>
+<gate name="G$1" symbol="+6V" x="7.62" y="-12.7"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
